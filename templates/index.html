@@ -2,6 +2,7 @@
     %} {%block content%}
     
     <h1>Predict your salary using AI</h1>
+    <a href="{{ url_for('home') }}" class="btn btn-secondary">Back to Home</a>
     {% if prediction %}
     <span class="prediction_text" id="output">
       Your predicted salary is: {{ "${:,.2f}".format(prediction.predicted_salary) }}
